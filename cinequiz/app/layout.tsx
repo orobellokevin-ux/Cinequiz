@@ -1,7 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <body>
@@ -16,6 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </nav>
           </div>
         </header>
+
         {children}
       </body>
     </html>
