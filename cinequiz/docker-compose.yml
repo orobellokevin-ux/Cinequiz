@@ -1,0 +1,10 @@
+services:
+  cinequiz:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      DATABASE_URL: file:/app/data/dev.db
+      AUTH_SECRET: change-me
+    volumes: ["cinequiz_data:/app/data"]
+volumes:
+  cinequiz_data:
